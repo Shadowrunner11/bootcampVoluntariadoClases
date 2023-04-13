@@ -1,0 +1,20 @@
+{
+  "name": "bootcampconovatec",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/pages/index.pug",
+    "build": "parcel build src/pages/index.pug --public-url=/bootcampVoluntariadoClases"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.8.3",
+    "@types/reveal.js": "^4.4.2",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "mermaid": "^10.1.0",
+    "reveal.js": "^4.4.0"
+  }
+}
