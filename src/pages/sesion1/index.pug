@@ -1,0 +1,73 @@
+extends ../../layouts/mainLayout
+
+block content
+  main.reveal
+    .slides
+      section
+        h1.
+          Bienvenidos al Bootcamp
+      section 
+        h2 Va dirigido a...
+        p principiantes en programacion
+      section
+        h2 Si ya tengo conocmientos...
+        p Y te interesa ver otros temas, cuentanos para poder aperturar mas bootcamps 
+        p O si te interesa un tema pero lo veremos mas adelante, puedes retomar las clases cuando creas convenient
+      section
+        section
+          h2 Hoy usaremos Python
+          div.m-auto.flex.justify-center
+            img(src="/src/assets/logoPython.svg", alt="Logo python")
+        section
+          p Tienes varias opciones, algunas son
+          ul 
+            li Instalar el interprete desde la pagina oficial 
+            li Instalar el interprete desde un store 
+              ul
+                li Microsfot store (Windows)
+                li Snap store (Linux)
+                li Brew (Mac)
+            li Usar replit 
+          p Recomendamos usar replit 
+      section 
+        h2 Vamos a Replit?
+        a(href="https://replit.con") https://replit.com 
+      section 
+        h2 Hora de codear!
+      section
+        pre 
+          code.language-python(data-line-numbers="4|1|3").
+            # Esto es un comentario
+
+            # Que crees que signifique esta linea?
+            print("Hello people from CONOVATEC")
+
+        p Si estas en replit presiona 
+          button.flex.bg-sky-500.justify-center.items-center.text-white.m-auto.p-2(class="min-w-[200px] h-[100px]")
+            p Run 
+            div(class="w-[30%]")
+              img(src="/src/assets/play.svg", alt="play button")
+      section
+        section
+          h1 Que habra pasado?
+          p 5 min 
+          p Como sabe la computadora que hacer?
+          P Que pasa si corro el codigo fuera de replit sin instalar nada?
+          p Que es un interprete?
+        section
+          p Han visto la premiacion de los Oscar, en vivo?
+          p han visto el Super Bowl LVI? 
+      section
+        h2 Maso menos sucede...
+        div.m-5
+          img(src="/src/assets/interpreterDiagram.svg", alt="Interpreter loop" class="!m-auto")
+        p Cada instruccion puede ser cada linea de codigo que no este comentada
+        
+           
+
+
+
+
+
+
+      
