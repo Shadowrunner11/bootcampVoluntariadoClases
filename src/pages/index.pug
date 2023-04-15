@@ -18,13 +18,21 @@ html(lang="en")
         a(href="#Courses", class="text-lg md:text-3xl font-medium bg-blue-500 text-white text-center py-2 rounded-xl inline-block w-full lg:w-1/2") Ver Cursos
       div(class="text-white w-full md:w-1/2 order-1 md:order-2")
         img(src="/src/assets/Computer.svg", alt="Image of Computer" class="md:w-full w-full")
+
     section#Courses(class="px-8 py-12 bg-blue-500 w-full flex flex-col md:flex-row")
       img(src="/src/assets/PairPrograming.svg", alt="Image of Pair Programing" class="w-full md:w-1/4 order-1")
       div(class="w-full md:w-3/4 pl-0 md:pl-16 order-2 mt-8 md:mt-0")
         h2(class="font-medium text-4xl text-white") Python
         p(class="font-normal text-lg text-white text-justify my-4") Python es un lenguaje de programación versátil y popular que se utiliza ampliamente en una variedad de campos. Su simplicidad y facilidad de uso lo hacen ideal para desarrolladores principiantes, mientras que su amplia gama de bibliotecas y módulos lo convierten en una herramienta poderosa para desarrolladores experimentados.
-        p(class="font-medium text-lg text-white my-4") CLASES
-        a(href="./sesion1/index.pug", class="text-white flex") Clase 01 <svg class="rotate-90 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255,255,255, 1);transform: ;msFilter:;"><path d="M19.071 19.071c3.898-3.899 3.898-10.244 0-14.143-3.899-3.898-10.243-3.898-14.143 0-3.898 3.899-3.898 10.244 0 14.143 3.9 3.899 10.244 3.899 14.143 0zM8.465 8.464h7.07l-2.828 2.829 3.535 3.536-1.414 1.414-3.535-3.536-2.828 2.829V8.464z"></path></svg>
+        h3(class="font-medium text-lg text-white my-4") CLASES
+        - let clases = ['sesion1', 'sesion2']
 
+        each val, index in clases
+          div.flex.gap-2.p-3.items-center
+            a(href=`./${val}/index.pug`, class="text-white flex") Clase #{index + 1}
+              include ../components/externaLinkIcon
+
+            a.rounded-full.bg-indigo-500.p-2.w-auto(href=`./${val}?print-pdf`) Descargar PDF
+            
 
     

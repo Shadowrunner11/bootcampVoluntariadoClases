@@ -1,0 +1,69 @@
+extends ../../layouts/mainLayout
+
+block content
+  main.reveal
+    .slides 
+      section
+        img(
+            src="https://img-9gag-fun.9cache.com/photo/aYYMjmv_460s.jpg", 
+            alt="meme html not programing language",
+            class="!m-auto"
+          )
+      
+      section
+        h2 Teorema del lenguage estructurado
+        div
+          div.flex.items-center.gap-2
+            include ../../components/barsArrowDown
+            p Secuencia
+          div.flex.items-center.gap-2.text-red-500.animate-pulse
+            include ../../components/repeat
+            p Iteracion
+          div.flex.items-center.gap-2
+            include ../../components/arrows
+            p Seleccion
+
+      section
+        img(
+          src="https://cdn.memes.com/up/84368821581907573/i/1608102006416.jpg",
+          alt="Meme multiplication goes out from memory",
+          class="!m-auto"
+        )
+
+      section
+        pre
+          code.language-python(data-line-numbers="1|3-4").
+            base_number = 8
+
+            for number in range(10):
+              print(base_number*number)
+
+        p Por que se quedo hasta multiplicar con 9?
+
+      section 
+        pre
+          code.language-python(data-line-numbers="1|3|5-7").
+            base_number = 8
+
+            stepper = 0
+
+            while(stepper <= 10):
+              print(base_number*stepper)
+              stepper = stepper + 1
+
+        p Por que si llego hasta multiplicar con 10?
+        p pista , fijate en el <=
+
+      section
+        h2 Es tu turno
+        ol
+          li Imprimir por pantalla la tabla de multiplicar del 9
+          li Exlicar en grupos de 3 que sucederia si le cambio el <= con solo <
+          li Explicar que sucederia si no coloco 
+            code.
+              stepper = stepper + 1
+
+      section 
+        h2 Roles de las variables
+        img(src="../../assets/11roles.jpeg", alt="Roles of variables")
+            
